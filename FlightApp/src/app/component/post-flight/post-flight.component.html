@@ -1,0 +1,51 @@
+<div class="form">
+    <form #flightForm="ngForm" (submit)="onFlighttSubmit(flightForm)">
+      <h2>BookMyFlight</h2>
+      <label>Flight Name: </label>
+      <input type="text" name="name" ngModel #name="ngModel"><br /><br />
+      <br/><br/>
+
+      <label>From / Source: </label>
+      <input type="text" name="source" ngModel #source="ngModel"> &nbsp;
+      <br/><br/>
+
+      <label>To / Destination: </label>
+      <input type="text" name="destination" ngModel #destination="ngModel"><br /><br />
+      <br/><br/>
+
+      <label>Departure Date: </label>
+      <input type="date" name="depatureDate" ngModel #depatureDate="ngModel"> &nbsp;
+      <br/><br/>
+
+      <label>Departure Time: </label>
+      <input type="time" name="depatureTime" ngModel #depatureTime="ngModel"><br /><br />
+      <br/><br/>
+
+      <label>Arrival Date: </label>
+      <input type="date" name="arrivalDate" ngModel #arrivalDate="ngModel">
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <br/><br/>
+
+      <label>Arrival Time: </label>
+      <input type="time" name="arrivalTime" ngModel #arrivalTime="ngModel"><br /><br /> 
+      <br/> <br/>
+
+      <label>Fare / Adult: </label>
+      <input type="number" name="adultFare" ngModel #adultFare="ngModel"> &nbsp;
+      <br/><br/>
+
+      <label>Fare / Child: </label>
+      <input type="number" name="childFare" ngModel #childFare="ngModel"><br /><br />
+      <br/><br/>
+
+      <label>Journey Duration: </label>
+      <input type="number" name="duration" ngModel #duration="ngModel">&nbsp;&nbsp; 
+      <br/><br/>
+
+      <label>Total Seats: </label>
+      <input type="number" name="seats" ngModel #seats="ngModel">
+      <br /><br/>
+  
+      <input type="submit" value="Post Flight">
+    </form>
+  </div>
